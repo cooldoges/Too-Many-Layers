@@ -7,9 +7,11 @@
 </body>
 <button>
 click me!
-</button>
+</button onclick ="addToPoints"(1)>
 <script>var points = 0;
-points = points + 1;
+function addToPoints(amount) {
+points = points + amount;
 document.getElementById("points").innerHTML = points;
+}
 </script>
 </html>
